@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ALIM | Portfolio</title>
+    <!-- Menghubungkan Font Modern -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* 1. CSS RESET & GLOBAL STYLE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 2. CARD CONTAINER */
+        .container {
+            background: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* 3. HEADER SECTION */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* Mengubah foto jadi bulat sempurna */
+            border: 4px solid #4f46e5;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.05); /* Efek membesar sedikit saat di-hover */
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #1e1b4b;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #6b7280;
+            text-align: center;
+        }
+
+        /* 4. SECTION STYLES */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #1e1b4b;
+            border-left: 4px solid #4f46e5;
+            padding-left: 10px;
+            margin-bottom: 12px;
+        }
+
+        /* 5. LISTS STYLE (Jadwal & Hobi) */
+        ol, ul {
+            padding-left: 20px;
+            color: #4b5563;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        /* 6. TABLE STYLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background-color: #f3f4f6;
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f9fafb;
+        }
+
+        /* 7. BUTTONS & LINKS */
+        .links-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-instagram {
+            background-color: #e1306c;
+            color: white;
+        }
+
+        .btn-instagram:hover {
+            background-color: #c13584;
+            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.3);
+        }
+
+        .btn-activity {
+            background-color: #4f46e5;
+            color: white;
+        }
+
+        .btn-activity:hover {
+            background-color: #4338ca;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bagian Utama / Atas -->
+        <header>
+            <img src="alim.jpeg" alt="Foto Alim">
+            <h1>Biografi Alim</h1>
+            <p class="bio">
+                Penulis bernama <strong>Faiz Alim Asshidiq</strong>, asal Bekasi dan bersekolah di IDN Boarding School. 
+                Saat ini penulis duduk di bangku SMK dan mengambil jurusan Programmer (RPL).
+            </p>
+        </header>
+
+        <!-- Bagian Tombol Navigasi / Sosial Media -->
+        <div class="links-group">
+            <a href="https://www.instagram.com/wn_liem/" target="_blank" class="btn btn-instagram">Instagram</a>
+            <a href="page2.html" class="btn btn-activity">Alim's Activity</a>
+        </div>
+
+        <!-- Bagian Jadwal Belajar -->
+        <section>
+            <h2>Jadwal Belajar</h2>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </section>
+
+        <!-- Bagian Hobi -->
+        <section>
+            <h2>Hobi</h2>
+            <ul>
+                <li>Bermain Voli</li>
+                <li>Bermain Game</li>
+            </ul>
+        </section>
+
+        <!-- Bagian Tabel Data Diri -->
+        <section>
+            <h2>Detail Kelas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Jurusan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alim</td>
+                        <td>X</td>
+                        <td>RPL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
