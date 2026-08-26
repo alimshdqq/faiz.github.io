@@ -3,93 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Alim | Portofolio Programmer</title>
+    <title>Faiz Alim | Programmer Portfolio</title>
+    <meta name="description" content="Portofolio Faiz Alim Asshidiq — Programmer RPL asal Bekasi.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
+
     <nav class="navbar">
-        <h1 class="leader" data-aos="zoom-in-down" data-aos-duration="1000">Website <span>Alim.</span></h1>
-        <div class="menu">
+        <h1 class="leader" data-aos="zoom-in-down" data-aos-duration="800">&lt;Alim<span>.dev</span>/&gt;</h1>
+
+        <div class="menu" id="menu">
             <ul>
-                <li data-aos="zoom-in-down" data-aos-duration="1000"><a href="#">Home</a></li>
-                <li data-aos="zoom-in-down" data-aos-duration="1000"><a href="#about-me">About</a></li>
-                <li data-aos="zoom-in-down" data-aos-duration="1000"><a href="#skills">Skills</a></li>
-                <li data-aos="zoom-in-down" data-aos-duration="1000"><a href="#education">History</a></li> 
-                <li data-aos="zoom-in-down" data-aos-duration="1000"><a href="#contact">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">History</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
         <div class="nav-button">
-            <a href="#contact" data-aos="zoom-in-down" data-aos-duration="1000">Hubungi Saya</a>
+            <a href="#contact">Hubungi Saya</a>
         </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="hero" data-aos="fade-up">
+    <!-- HERO SECTION — PLAYER CARD -->
+    <header class="hero" id="top">
         <div class="hero-container">
             <div class="hero-text">
-                <span class="badge" data-aos="zoom-in-down" data-aos-duration="1000">Selamat Datang</span>
-                <h1 data-aos="zoom-in-down" data-aos-duration="1000">Faiz Alim</h1>
-                <h3 class="alamat" data-aos="zoom-in-down" data-aos-duration="1000">📍 Bekasi Utara, Indonesia</h3>
-                <p class="lorem" data-aos="zoom-in-down" data-aos-duration="1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore veritatis itaque amet assumenda deleniti qui. Error voluptatem enim nobis itaque perferendis.</p>
-                <p class="tagline" data-aos="zoom-in-down" data-aos-duration="1000">Saya adalah seorang <span>Programmer</span></p>
-                <a href="https://www.instagram.com/wn_liem" target="_blank" class="btn-primary" data-aos="flip-left" data-aos-duration="1000">Ikuti Instagram</a>
+                <span class="badge" data-aos="fade-right" data-aos-duration="800">Player One · Online</span>
+                <h1 data-aos="fade-right" data-aos-duration="800">Faiz Alim</h1>
+                <h3 class="alamat" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">📍 Bekasi Utara, Indonesia</h3>
+                <p class="lorem" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
+                    Siswa SMK jurusan Rekayasa Perangkat Lunak (RPL) yang sedang menempa skill di dunia programming —
+                    dari HTML, CSS, sampai JavaScript — sambil terus level-up satu quest belajar demi satu quest lainnya.
+                </p>
+                <p class="tagline" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">Class: <span>Programmer</span></p>
+                <div class="hero-buttons" data-aos="fade-right" data-aos-duration="800" data-aos-delay="250">
+                    <a href="https://www.instagram.com/wn_liem" target="_blank" class="btn-primary">Ikuti Instagram</a>
+                    <a href="index.html" class="btn-ghost">Lihat Bio Card</a>
+                </div>
             </div>
-            <div class="hero-image">
+
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="900">
                 <div class="image-bg-effect"></div>
-                <img src="alim.jpeg" alt="Foto Alim" data-aos="zoom-in-down" data-aos-duration="1000">
+                <img src="alim.jpeg" alt="Foto Faiz Alim">
+                <span class="level-chip">LVL 01 · RPL STUDENT</span>
             </div>
         </div>
     </header>
-          
-    <!-- ABOUT ME SECTION -->
+
+    <!-- ABOUT ME / CHARACTER INFO -->
     <section id="about-me" class="about-me">
         <div class="about-container">
             <div class="about-text">
-                <h2 data-aos="zoom-in-down" data-aos-duration="1000">About <span>Me</span></h2>
-                <p data-aos="zoom-in-down" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium dolorum eligendi explicabo tenetur, error iure doloribus eveniet suscipit ex, dignissimos, veritatis esse cum inventore ipsum! Suscipit atque ipsa facere?</p>
+                <span class="eyebrow" data-aos="fade-up">Character Info</span>
+                <h2 data-aos="fade-up">About <span>Me</span></h2>
+                <p data-aos="fade-up">
+                    Nama lengkap <strong>Faiz Alim Asshidiq</strong>, berasal dari Bekasi dan menempuh pendidikan di
+                    IDN Boarding School. Saat ini duduk di bangku SMK kelas X, jurusan Rekayasa Perangkat Lunak (RPL),
+                    dan sedang membangun fondasi sebagai programmer sambil menyeimbangkan hobi bermain voli dan game.
+                </p>
+
+                <div class="stat-grid">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+                        <span class="stat-label">Asal</span>
+                        <span class="stat-value">Bekasi Utara</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="80">
+                        <span class="stat-label">Sekolah</span>
+                        <span class="stat-value">IDN Boarding School</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="160">
+                        <span class="stat-label">Kelas / Jurusan</span>
+                        <span class="stat-value">X · RPL</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="240">
+                        <span class="stat-label">Hobi</span>
+                        <span class="stat-value">Voli & Gaming</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="skills" >
-        <h2 data-aos="fade-down" data-aos-duration="1000">My <span>Skills</span></h2>
+    <!-- SKILLS / ABILITY CARDS -->
+    <section id="skills" class="skills">
+        <span class="eyebrow" style="display:flex;justify-content:center;margin-bottom:14px;" data-aos="fade-up">Ability Tree</span>
+        <h2 data-aos="fade-up">My <span>Skills</span></h2>
+        <p class="section-sub" data-aos="fade-up">Progress belajar yang terus di-grind setiap hari</p>
+
         <div class="skills-container">
-            <div class="skills-card" data-aos="flip-right" data-aos-duration="1000">
+            <div class="skills-card" data-aos="flip-right" data-aos-duration="800">
+                <span class="skill-icon">🟧</span>
                 <h2>HTML</h2>
                 <p class="stars">⭐⭐⭐⭐⭐</p>
-                <div class="progress">
-                    <div class="progress-bar html-bar"></div>
-                </div>
+                <div class="progress"><div class="progress-bar html-bar"></div></div>
             </div>
-            <div class="skills-card"  data-aos="flip-up" data-aos-duration="1000">
+            <div class="skills-card" data-aos="flip-up" data-aos-duration="800">
+                <span class="skill-icon">🔵</span>
                 <h2>CSS</h2>
                 <p class="stars">⭐⭐⭐⭐</p>
-                <div class="progress">
-                    <div class="progress-bar css-bar"></div>
-                </div>
+                <div class="progress"><div class="progress-bar css-bar"></div></div>
             </div>
-            <div class="skills-card" data-aos="flip-left" data-aos-duration="1000">
+            <div class="skills-card" data-aos="flip-left" data-aos-duration="800">
+                <span class="skill-icon">🟨</span>
                 <h2>JavaScript</h2>
                 <p class="stars">⭐⭐⭐</p>
-                <div class="progress">
-                    <div class="progress-bar js-bar"></div>
+                <div class="progress"><div class="progress-bar js-bar"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION / QUEST LOG -->
+    <section id="education" class="education">
+        <span class="eyebrow" style="display:flex;justify-content:center;margin-bottom:14px;" data-aos="fade-up">Quest Log</span>
+        <h2 data-aos="fade-up">Riwayat <span>Pendidikan</span></h2>
+
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">SD</div>
+                <div class="timeline-content">
+                    <h3>SDN Pejuang I</h3>
+                    <p>Memulai perjalanan dasar pendidikan formal dengan fokus pada pengembangan karakter, akademis dasar, dan adaptasi lingkungan sosial.</p>
+                    <span class="quest-tag">✔ Quest Completed</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">SMP</div>
+                <div class="timeline-content">
+                    <h3>SMPIQU Al-Bahjah Bogor</h3>
+                    <p>Menempuh pendidikan berbasis pesantren (boarding school) yang memadukan kurikulum nasional formal dengan pendalaman nilai-nilai agama serta Al-Qur'an.</p>
+                    <span class="quest-tag">✔ Quest Completed</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">SMK · In Progress</div>
+                <div class="timeline-content">
+                    <h3>IDN Boarding School</h3>
+                    <p>Fokus mendalami bidang IT dan Pemrograman secara intensif di lingkungan asrama, menguasai kompetensi dasar hingga tingkat lanjut untuk bekal sebagai Programmer.</p>
+                    <span class="quest-tag">⏳ Ongoing Quest</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT -->
     <section id="contact" class="contact">
-        <h2 data-aos="fade-up" data-aos-duration="1000">Hubungi <span>Saya</span></h2>
+        <span class="eyebrow" style="display:flex;justify-content:center;margin-bottom:14px;" data-aos="fade-up">Send a Message</span>
+        <h2 data-aos="fade-up">Hubungi <span>Saya</span></h2>
+
         <div class="contact-container">
-            <div class="contact-form">
-                <form action="https://formsubmit.co/faizkelazz29@email.com" method="post" data-aos="fade-down-right" data-aos-duration="1000">
+            <div class="contact-form" data-aos="fade-right" data-aos-duration="800">
+                <form action="https://formsubmit.co/faizkelazz29@email.com" method="post">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Nama</label>
@@ -122,58 +203,69 @@
                 </form>
             </div>
 
-            <div class="contact-maps" data-aos="zoom-in" data-aos-duration="1000">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.4860749129634!2d120.08392457417241!3d30.308689006005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344b62e59347d573%3A0xc71a5f36936f81a0!2sUniversitas%20Zhejiang!5e0!3m2!1sid!2sid!4v1786673718862!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div class="contact-maps" data-aos="zoom-in" data-aos-duration="800">
+                <iframe src="https://www.google.com/maps?q=Bekasi%20Utara,%20Indonesia&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </div>
     </section>
-<section id="about-me" class="about-me">
-        <!-- ... (kode about me tetap sama) ... -->
-    </section>
 
-    <!-- EDUCATION SECTION (TAMBAHAN BARU) -->
-    <section id="education" class="education">
-        <h2 data-aos="flip-down" data-aos-duration="1000">Riwayat <span>Pendidikan</span></h2>
-        <div class="timeline">
-
-            <div class="timeline-item" data-aos="zoom-in-down" data-aos-duration="1000">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">SD</div>
-                <div class="timeline-content">
-                    <h3>SDN Pejuang I</h3>
-                    <p>Memulai perjalanan dasar pendidikan formal dengan fokus pada pengembangan karakter, akademis dasar, dan adaptasi lingkungan sosial.</p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3 class="leader">&lt;Alim<span>.dev</span>/&gt;</h3>
+                <p>Programmer pemula asal Bekasi yang sedang naik level lewat HTML, CSS, dan JavaScript — satu commit, satu quest.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/wn_liem" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="mailto:faizkelazz29@email.com" aria-label="Email">✉</a>
                 </div>
             </div>
 
-            <div class="timeline-item" data-aos="zoom-in-down" data-aos-duration="1000">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">SMP</div>
-                <div class="timeline-content">
-                    <h3>SMPIQU Al-Bahjah Bogor</h3>
-                    <p>Menempuh pendidikan berbasis pesantren (boarding school) yang memadukan kurikulum nasional formal dengan pendalaman nilai-nilai agama serta Al-Qur'an.</p>
-                </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">History</a></li>
+                </ul>
             </div>
 
-            <div class="timeline-item" data-aos="zoom-in-down" data-aos-duration="1000">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">SMK</div>
-                <div class="timeline-content">
-                    <h3>IDN Boarding School</h3>
-                    <p>Fokus mendalami bidang IT dan Pemrograman secara intensif di lingkungan asrama, menguasai kompetensi dasar hingga tingkat lanjut untuk bekal sebagai Programmer.</p>
-                </div>
+            <div class="footer-col">
+                <h4>Lainnya</h4>
+                <ul>
+                    <li><a href="index.html">Bio Card</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="https://www.instagram.com/wn_liem" target="_blank">Instagram</a></li>
+                </ul>
             </div>
-
         </div>
-    </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="skills">
-    
-    </section>
+        <div class="footer-bottom">
+            <span><span class="status-dot"></span>Status: Available for learning &amp; collab</span>
+            <span>© 2026 Faiz Alim Asshidiq. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+        AOS.init({ once: true, offset: 60 });
+
+        const navToggle = document.getElementById('navToggle');
+        const menu = document.getElementById('menu');
+        navToggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.remove('open'));
+        });
+
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+        });
+    </script>
 </body>
 </html>

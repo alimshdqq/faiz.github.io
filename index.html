@@ -1,220 +1,276 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT ALIM | Portfolio</title>
-    <!-- Menghubungkan Font Modern -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <style>
-        /* 1. CSS RESET & GLOBAL STYLE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faiz Alim Asshidiq — Programmer (RPL)</title>
+<meta name="description" content="Portofolio Faiz Alim Asshidiq, siswa SMK jurusan Rekayasa Perangkat Lunak (RPL) di IDN Boarding School.">
 
-        body {
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        /* 2. CARD CONTAINER */
-        .container {
-            background: #ffffff;
-            max-width: 600px;
-            width: 100%;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        /* 3. HEADER SECTION */
-        header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        header img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%; /* Mengubah foto jadi bulat sempurna */
-            border: 4px solid #4f46e5;
-            margin-bottom: 15px;
-            transition: transform 0.3s ease;
-        }
-
-        header img:hover {
-            transform: scale(1.05); /* Efek membesar sedikit saat di-hover */
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #1e1b4b;
-            margin-bottom: 8px;
-        }
-
-        .bio {
-            font-size: 14px;
-            color: #6b7280;
-            text-align: center;
-        }
-
-        /* 4. SECTION STYLES */
-        section {
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            font-size: 18px;
-            color: #1e1b4b;
-            border-left: 4px solid #4f46e5;
-            padding-left: 10px;
-            margin-bottom: 12px;
-        }
-
-        /* 5. LISTS STYLE (Jadwal & Hobi) */
-        ol, ul {
-            padding-left: 20px;
-            color: #4b5563;
-        }
-
-        li {
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
-
-        /* 6. TABLE STYLE */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        th {
-            background-color: #f3f4f6;
-            color: #1f2937;
-            font-weight: 600;
-        }
-
-        tr:hover {
-            background-color: #f9fafb;
-        }
-
-        /* 7. BUTTONS & LINKS */
-        .links-group {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 25px;
-            justify-content: center;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .btn-instagram {
-            background-color: #e1306c;
-            color: white;
-        }
-
-        .btn-instagram:hover {
-            background-color: #c13584;
-            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.3);
-        }
-
-        .btn-activity {
-            background-color: #4f46e5;
-            color: white;
-        }
-
-        .btn-activity:hover {
-            background-color: #4338ca;
-            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
-        }
-    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Bagian Utama / Atas -->
-        <header>
-            <img src="alim.jpeg" alt="Foto Alim">
-            <h1>Biografi Alim</h1>
-            <p class="bio">
-                Penulis bernama <strong>Faiz Alim Asshidiq</strong>, asal Bekasi dan bersekolah di IDN Boarding School. 
-                Saat ini penulis duduk di bangku SMK dan mengambil jurusan Programmer (RPL).
-            </p>
-        </header>
+<!-- ambient background -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="grid-overlay"></div>
+</div>
 
-        <!-- Bagian Tombol Navigasi / Sosial Media -->
-        <div class="links-group">
-            <a href="https://www.instagram.com/wn_liem/" target="_blank" class="btn btn-instagram">Instagram</a>
-            <a href="page2.html" class="btn btn-activity">Alim's Activity</a>
-        </div>
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="#home" class="brand"><span class="brand-bracket">&lt;</span>Alim<span class="brand-bracket">/&gt;</span></a>
 
-        <!-- Bagian Jadwal Belajar -->
-        <section>
-            <h2>Jadwal Belajar</h2>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-        </section>
+  <nav class="menu" id="menu">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">Tentang</a>
+    <a href="#skills" class="nav-link">Skill</a>
+    <a href="#roadmap" class="nav-link">Roadmap</a>
+    <a href="#education" class="nav-link">Pendidikan</a>
+    <a href="#contact" class="nav-link">Kontak</a>
+  </nav>
 
-        <!-- Bagian Hobi -->
-        <section>
-            <h2>Hobi</h2>
-            <ul>
-                <li>Bermain Voli</li>
-                <li>Bermain Game</li>
-            </ul>
-        </section>
+  <a href="#contact" class="btn btn-primary nav-cta">Hubungi Saya</a>
 
-        <!-- Bagian Tabel Data Diri -->
-        <section>
-            <h2>Detail Kelas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nama</th>
-                        <th>Kelas</th>
-                        <th>Jurusan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alim</td>
-                        <td>X</td>
-                        <td>RPL</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-grid">
+
+    <div class="hero-text reveal">
+      <span class="badge"><span class="dot-live"></span>Tersedia untuk kolaborasi</span>
+      <h1>Faiz Alim<br><span class="grad-text">Asshidiq</span></h1>
+      <p class="role">Programmer <span class="mono-chip">RPL</span> — IDN Boarding School</p>
+      <p class="lead">Siswa SMK jurusan Rekayasa Perangkat Lunak yang sedang membangun fondasi sebagai programmer, dimulai dari baris kode paling sederhana.</p>
+
+      <div class="hero-actions">
+        <a href="https://www.instagram.com/wn_liem/" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-2.7 0-3.05.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2 8.95 2 9.3 2 12s.01 3.05.06 4.12c.05 1.06.22 1.79.47 2.43a4.9 4.9 0 0 0 1.15 1.77 4.9 4.9 0 0 0 1.77 1.15c.64.25 1.37.42 2.43.47C8.95 22 9.3 22 12 22s3.05-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.07.06-1.42.06-4.12s-.01-3.05-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.05 2 14.7 2 12 2Zm0 1.8c2.65 0 2.97.01 4.02.06.97.04 1.5.2 1.85.34.46.18.79.4 1.14.75.35.35.57.68.75 1.14.14.35.3.88.34 1.85.05 1.05.06 1.37.06 4.02s-.01 2.97-.06 4.02c-.04.97-.2 1.5-.34 1.85-.18.46-.4.79-.75 1.14-.35.35-.68.57-1.14.75-.35.14-.88.3-1.85.34-1.05.05-1.37.06-4.02.06s-2.97-.01-4.02-.06c-.97-.04-1.5-.2-1.85-.34a3.1 3.1 0 0 1-1.14-.75 3.1 3.1 0 0 1-.75-1.14c-.14-.35-.3-.88-.34-1.85C3.81 14.97 3.8 14.65 3.8 12s.01-2.97.06-4.02c.04-.97.2-1.5.34-1.85.18-.46.4-.79.75-1.14.35-.35.68-.57 1.14-.75.35-.14.88-.3 1.85-.34C9.03 3.81 9.35 3.8 12 3.8Zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3Zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7Zm5.35-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z" fill="currentColor"/></svg>
+          Instagram
+        </a>
+        <a href="#skills" class="btn btn-ghost">Lihat Skill</a>
+      </div>
     </div>
 
+    <div class="hero-visual reveal" style="--delay:120ms">
+      <div class="editor-window">
+        <div class="editor-titlebar">
+          <span class="tl-dot red"></span><span class="tl-dot yellow"></span><span class="tl-dot green"></span>
+          <span class="editor-tab">profil.js</span>
+        </div>
+        <pre class="editor-body"><code id="typewriter"></code><span class="caret"></span></pre>
+      </div>
+
+      <div class="photo-frame">
+        <img src="alim.jpeg" alt="Foto Faiz Alim Asshidiq" loading="eager">
+      </div>
+
+      <div class="float-chip chip-html">HTML</div>
+      <div class="float-chip chip-css">CSS</div>
+      <div class="float-chip chip-js">JS</div>
+    </div>
+
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Gulir ke bawah"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="section-head reveal">
+    <span class="eyebrow">// tentang</span>
+    <h2>Kenalan Sama Alim</h2>
+  </div>
+
+  <div class="about-grid">
+    <p class="about-text reveal">
+      Nama saya <strong>Faiz Alim Asshidiq</strong>, akrab disapa <strong>Alim</strong>. Saya berasal dari Bekasi dan saat ini menempuh pendidikan di
+      <strong>IDN Boarding School</strong>. Saya sedang membangun dasar-dasar sebagai programmer — mulai dari menyusun struktur halaman dengan HTML,
+      mempercantiknya dengan CSS, hingga menghidupkannya dengan JavaScript.
+    </p>
+
+    <div class="id-card reveal" style="--delay:120ms">
+      <div class="id-card-top">
+        <img src="alim.jpeg" alt="Foto Alim" class="id-photo">
+        <div>
+          <p class="id-name">Faiz Alim Asshidiq</p>
+          <p class="id-role">Student Developer</p>
+        </div>
+      </div>
+      <div class="id-rows">
+        <div class="id-row"><span>Kelas</span><strong>X</strong></div>
+        <div class="id-row"><span>Jurusan</span><strong>RPL</strong></div>
+        <div class="id-row"><span>Sekolah</span><strong>IDN Boarding School</strong></div>
+        <div class="id-row"><span>Asal</span><strong>Bekasi, Indonesia</strong></div>
+      </div>
+      <div class="id-barcode" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="hobby-row">
+    <div class="hobby-card reveal">
+      <span class="hobby-icon">🏐</span>
+      <h3>Bermain Voli</h3>
+      <p>Suka main voli bareng teman asrama saat waktu istirahat.</p>
+    </div>
+    <div class="hobby-card reveal" style="--delay:100ms">
+      <span class="hobby-icon">🎮</span>
+      <h3>Bermain Game</h3>
+      <p>Menghabiskan waktu luang dengan main game favorit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="section-head reveal">
+    <span class="eyebrow">// kemampuan</span>
+    <h2>Skill Saat Ini</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-top"><h3>HTML</h3><span class="stars">★★★★★</span></div>
+      <div class="progress"><div class="progress-bar" data-width="95"></div></div>
+      <p class="skill-note">Mahir menyusun struktur halaman web.</p>
+    </div>
+    <div class="skill-card reveal" style="--delay:100ms">
+      <div class="skill-top"><h3>CSS</h3><span class="stars">★★★★☆</span></div>
+      <div class="progress"><div class="progress-bar" data-width="80"></div></div>
+      <p class="skill-note">Terbiasa styling, layout, dan animasi dasar.</p>
+    </div>
+    <div class="skill-card reveal" style="--delay:200ms">
+      <div class="skill-top"><h3>JavaScript</h3><span class="stars">★★★☆☆</span></div>
+      <div class="progress"><div class="progress-bar" data-width="60"></div></div>
+      <p class="skill-note">Masih terus belajar logika & interaktivitas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="roadmap">
+  <div class="section-head reveal">
+    <span class="eyebrow">// jadwal belajar</span>
+    <h2>Roadmap Belajar</h2>
+  </div>
+
+  <div class="terminal reveal">
+    <div class="editor-titlebar">
+      <span class="tl-dot red"></span><span class="tl-dot yellow"></span><span class="tl-dot green"></span>
+      <span class="editor-tab">roadmap.sh</span>
+    </div>
+    <div class="terminal-body">
+      <p class="term-line"><span class="prompt">$</span> tampilkan jadwal-belajar</p>
+      <p class="term-line done"><span class="tag">[✓]</span> 01. HTML — fondasi struktur halaman web</p>
+      <p class="term-line done"><span class="tag">[✓]</span> 02. CSS — styling, layout, dan animasi</p>
+      <p class="term-line progress-line"><span class="tag">[~]</span> 03. JavaScript — logika &amp; interaktivitas <em>(sedang berjalan)</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="education">
+  <div class="section-head reveal">
+    <span class="eyebrow">// riwayat</span>
+    <h2>Riwayat Pendidikan</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">SD</div>
+      <div class="timeline-content">
+        <h3>SDN Pejuang I</h3>
+        <p>Memulai perjalanan dasar pendidikan formal dengan fokus pada pengembangan karakter, akademis dasar, dan adaptasi lingkungan sosial.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal" style="--delay:100ms">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">SMP</div>
+      <div class="timeline-content">
+        <h3>SMPIQU Al-Bahjah Bogor</h3>
+        <p>Menempuh pendidikan berbasis pesantren (boarding school) yang memadukan kurikulum nasional formal dengan pendalaman nilai-nilai agama serta Al-Qur'an.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal" style="--delay:200ms">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">SMK</div>
+      <div class="timeline-content">
+        <h3>IDN Boarding School</h3>
+        <p>Fokus mendalami bidang IT dan Pemrograman secara intensif di lingkungan asrama, menguasai kompetensi dasar hingga tingkat lanjut untuk bekal sebagai Programmer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="section-head reveal">
+    <span class="eyebrow">// kontak</span>
+    <h2>Hubungi Saya</h2>
+  </div>
+
+  <div class="contact-grid">
+    <form class="contact-form reveal" action="https://formsubmit.co/faizkelazz29@email.com" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="Nama" placeholder="Nama Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" placeholder="Email Anda" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="tgl">Tanggal Lahir</label>
+          <input type="date" id="tgl" name="Usia">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Pilih Gender</option>
+            <option value="Pria">Pria</option>
+            <option value="Wanita">Wanita</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary full">Kirim Pesan</button>
+    </form>
+
+    <div class="contact-side reveal" style="--delay:120ms">
+      <div class="side-card">
+        <span class="eyebrow">📍 Lokasi</span>
+        <p>Bekasi Utara, Indonesia</p>
+      </div>
+      <div class="side-card">
+        <span class="eyebrow">🔗 Sosial Media</span>
+        <a href="https://www.instagram.com/wn_liem/" target="_blank" rel="noopener" class="side-link">@wn_liem — Instagram</a>
+      </div>
+      <div class="side-card">
+        <span class="eyebrow">💬 Status</span>
+        <p>Terbuka untuk ngobrol soal belajar programming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><span class="brand-bracket">&lt;</span>Alim<span class="brand-bracket">/&gt;</span> — Dibangun dengan HTML, CSS &amp; JavaScript.</p>
+  <p class="footer-year"></p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
