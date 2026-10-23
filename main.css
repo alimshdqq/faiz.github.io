@@ -236,6 +236,7 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: 0.5px; }
     text-shadow: 0 0 30px rgba(0, 229, 255, 0.25);
     position: relative;
     display: inline-block;
+    padding: 0 5%;
 }
 
 .hero-text h1:hover {
@@ -282,7 +283,7 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: 0.5px; }
 
 @keyframes blink { 50% { opacity: 0; } }
 
-.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-buttons { padding :0 5% ;display: flex; gap: 16px; flex-wrap: wrap; }
 
 .btn-primary, .btn-ghost {
     display: inline-flex;
@@ -439,11 +440,7 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: 0.5px; }
     margin-bottom: 50px;
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 26px;
-}
+
 
 .skills-card {
     position: relative;
@@ -820,4 +817,12 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: 0.5px; }
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+.hero-text h3 {
+    padding: 0 5%;
+}
+
+.hero-text p {
+    padding: 0 5%;
 }
